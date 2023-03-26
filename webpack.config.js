@@ -24,6 +24,13 @@ module.exports ={
             include: path.resolve(__dirname, 'src'),
             use: ['style-loader', 'css-loader', 'postcss-loader'],
           },
+          {
+            test: /\.(png|svg|jpe?g|gif)$/i,
+            loader: 'file-loader',
+            options: {
+              outputPath: './assets/img',
+            },
+            },
         ],
       },
 }
