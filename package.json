@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack ",
     "watch": "webpack  serve",
-    "format": "npx prettier --write ."
+    "format": "npx prettier --write .",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/mohsenAKB/config-webpack-with-tailwind#readme",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "eslint": "^8.36.0",
     "file-loader": "^6.2.0",
     "husky": "^8.0.3",
     "postcss": "^8.4.21",
