@@ -22,8 +22,9 @@ Swal.fire({
 });
 
 // cancelSubscription proccess and change text cancelSubscription btn
-const cancelSubscription = document.querySelector('.cancel-subscription');
-cancelSubscription.addEventListener('click', openModalToCancelSubscription);
+const cancelSubscriptionBtn = document.querySelector('.cancel-subscription');
+cancelSubscriptionBtn.addEventListener('click', openModalToCancelSubscription);
+
 function openModalToCancelSubscription() {
   Swal.fire({
     title: 'Are you sure from cancel Subscription?',
@@ -42,9 +43,10 @@ function openModalToCancelSubscription() {
 }
 
 //   remove list visa method
-const visaMethod = document.querySelector('.visa-remove');
+const visaMethodBtn = document.querySelector('.visa-remove');
 const visaPaymentRow = document.querySelector('.visa-payment-row');
-visaMethod.addEventListener('click', openModalToRemoveVisa);
+
+visaMethodBtn.addEventListener('click', openModalToRemoveVisa);
 function openModalToRemoveVisa() {
   Swal.fire({
     title: 'Are you sure from cancel visa?',
