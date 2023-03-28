@@ -23,6 +23,7 @@ Swal.fire({
 
 // cancelSubscription proccess and change text cancelSubscription btn
 const cancelSubscriptionBtn = document.querySelector('.cancel-subscription');
+console.log(cancelSubscriptionBtn);
 cancelSubscriptionBtn.addEventListener('click', openModalToCancelSubscription);
 
 function openModalToCancelSubscription() {
@@ -37,7 +38,7 @@ function openModalToCancelSubscription() {
   }).then((result) => {
     if (result.isConfirmed) {
       Swal.fire('Deleted!', 'Your Subscription has been canceled.', 'success');
-      cancelSubscription.textContent = 'buy subscription';
+      cancelSubscriptionBtn.textContent = 'buy subscription';
     }
   });
 }
